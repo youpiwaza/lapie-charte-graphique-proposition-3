@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"     content="width=device-width, initial-scale=1.0">
+  <meta name="description"  content="Champagne Didier Lapie / Charte graphique">
+
+  <!-- RS / OpenGraph optimisation / https://www.yakaferci.com/open-graph/ / https://opengraphcheck.com/-->
+  <meta property="og:title" content="Champagne Didier Lapie / Charte graphique" />
+  <meta property="og:type"  content="website" />
+  <!-- <meta property="og:url"   content="TODO / RS / url en ligne, ex: http://masamune.fr/cv/competences/" />
+  <meta property="og:image" content="TODO / RS / aperçu en ligne, ex: http://masamune.fr/cv/masamune-logo.jpg" /> -->
+
+  <title>Charte graphique pour Champagne Didier Lapie</title>
+
+  <link rel="shortcut icon"     href="assets/images/glorious-favicon.ico">
+  <link rel="apple-touch-icon"  href="assets/images/apple-touch-glorious-icon.png">
+
+  <!-- Those lines will be removed automatically w. 'gulp prod' -->
+  <link rel="stylesheet" type="text/css" href="css/vendors/normalize.css">
+  <!-- Add font awesome / https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself -->
+  <link rel="stylesheet" type="text/css" href="css/vendors/font-awesome/css/all.min.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Minified injected css -->
+  <!-- htmlmin:ignore1-->
+  <style>
+    /* inject:critcss */
+    /* endinject */
+  </style>
+  <!-- htmlmin:ignore1:end-->
+
+  <!-- CSS generated custom classes injection here -->
+</head>
+
+<body class="container">
+
+  <section id="accueil">
+    <div class="content">
+      <h1>Charte graphique</h1>
+      <h2>Champagne Didier Lapie</h2>
+      <h3>Proposition numéro 2</h3>
+      <p><em>Couleurs "Gourmandise et delicatesse" Rouge cerise / Bleu foncé / Prune</em></p>
+
+      <ul>
+        <li>Polices</li>
+        <li>Textes (style recherché, etc.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="sommaire">
+    <div class="content">
+      <h2>Sommaire</h2>
+
+      <!-- Les liens du sommaire ainsi que les boutons de navigation sont générés automatiquement en JS -->
+      <ul></ul>
+    </div>
+  </section>
+
+  <!-- Pour rajouter une section, vous pouvez utiliser cette base -->
+  <!-- Attention à l'unicité de l'id -->
+  <!--
+  <section id="unIdUnique">
+    <div class="content">
+      <h2>Mon titre</h2>
+    </div>
+  </section>
+  -->
+  
+  <!-- Les sections DOIVENT contenir des ID afin que la navigation s'effectue correctement -->
+  <section id="references">
+    <div class="content">
+      <!-- Les sections DOIVENT également contenir un h2, qui permettra de générer le texte de la liste du sommaire -->
+      <h2>Références</h2>
+      <p>Les images qui ont inspirées cette charte graphique</p>
+      <div class="colonnes">
+        <div>
+          <img src="assets/images/Ephemere-rose-detoure.png" alt="Inspiration" height="350" title="Inspiration" width="105">
+          <p>La bouteille prestige, avec son vert profond qui tire sur le rose, et son rose pastel</p>
+        </div>
+        <div>
+          <img src="assets/images/gourmandise.jpg" alt="Inspiration" height="350" title="Inspiration" width="350">
+          <p>Une coupe de glace a la framboise</p>
+        </div>
+        <div>
+          <img src="assets/images/gourmandise2.jpg" alt="Inspiration" height="350" title="Inspiration" width="210">
+          <p>Des sucettes roses et bleu canard</p>
+        </div>
+        
+      </div>
+    </div>  
+  </section>
+
+  <section id="couleurs">
+    <div class="content">
+      <h2>Palette de couleurs</h2>
+      <div class="description">
+        <p>Un tournant radical dans cette nouvelle proposition de charte.</p>
+        <p>Le rose de la bouteille éphémère était trop pâle, et donc trop pastel.
+          Je l'ai re-saturé afin de m'en servir comme couleur de base pour ce 
+          <a href="https://www.palettable.io/D60040-03031B-804068-04403F-09A3A5" target="_blank" title="Nuancier en ligne">nuancier</a>.</p>
+        <p>La couleur est ensuite déclinée de manière harmonieuse en suivant la règle des complémentaires partagées (nuances + une complémentaire).</p>
+        <p>Le but étant de se rapprocher presque d'une charte cuisine/dessert pour son côté gourmand et délicat.</p>
+      </div>
+      <div class="colonnes">
+        <div>
+          <h3>Couleurs principales</h3>
+          <!--       
+            Simplement rentrer les couleurs ici, la chaîne est récupérée et réutilisée.
+            Je passe par tinycolor, qui convertit, vous pouvez donc passer plusieurs formats.
+              https://github.com/bgrins/TinyColor#accepted-string-input
+          -->
+          <div class="colors">
+            <div class="color" data-color="03031B">Noir bleu</div>
+            <div class="color" data-color="d60040" data-declinaison="ok">Rouge cerise</div>
+            <div class="color" data-color="804068" data-declinaison="ok">Prune</div>
+            <div class="color" data-color="09A3A5" data-declinaison="ok">Bleu canard</div>
+          </div>
+          <!-- 
+            Note :
+              Des classes CSS seront générées automatiquement pour la couleur de fond, et de texte
+              Pour l'ensemble des couleurs et de leurs déclinsaisons, cf. style.css pour un exemple plus détaillé
+              Exemple : 
+                .bg-color1 {
+                  background-color: #151132;
+                }
+                .color1 {
+                  color: #151132;
+                }
+                .bg-color1-brighter {
+                  background-color: #2e2a4b;
+                }
+                .color1-brighter {
+                  color: #2e2a4b;
+                }
+                .bg-color1-darker {
+                  background-color: #05040c;
+                }
+                .color1-darker {
+                  color: #05040c;
+                }
+          -->
+        </div>
+        <!-- Remplie ou masquée automatiquement en fonction des attributs data-declinaison des couleurs -->
+        <div class="declinaisonsColumn"></div>
+      </div>
+      <hr>
+      <h4>Complément de couleurs</h4>
+      <p>Comme pour la première charte, une couleur dorée accentuera le côté luxueux et devrait bien se marier avec ces couleurs.<br>
+        En web c'est assez spécifique dans le sens ou les applats de tons dorés ne rendent pas 
+        <a href="https://www.drkcreative.com/using-gold-color-web/" target="_blank" title="Gold colors for web">l'effet escompté</a>.</p>
+      <div class="colonnes">
+        <div class="left">
+          <ul>
+            <li  class="p051em bg-all-colors"><div class="p051em bg-or1">#ae8625 #f7ef8a #d2ac47 #edc967 #d2ac47</div></li>
+            <li  class="p051em bg-all-colors"><div class="p051em bg-or2">#dfbd69 #926f34</div></li>
+            <li  class="p051em bg-all-colors"><div class="p051em bg-or3">#f9f295 #e0aa3e #f9f295 #b88a44</div></li>
+          </ul>
+        </div>
+        <div class="right">
+          Il en existe également 
+          <a href="https://www.eggradients.com/category/gold-gradient" target="_blank" title="D'autres dégradés dorés pour le web">beaucoup d'autres</a>,<br> 
+          ainsi que des possibilités d'<a href="https://cssgradient.io/" target="_blank" title="css gradient">ajuster la répartition</a>,<br>
+          et même de <a href="https://cssdeck.com/labs/mfqb3utw" target="_blank" title="Css trick color font">colorier des textes</a>.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="regles-couleurs">
+    <div class="content">
+      <h2>Couleurs : règles et usages</h2>
+      <div class="colonnes">
+        <div class="recommandations">
+          <h3>Recommandation ✅</h3>
+          <p>Utiliser les couleurs claires sur un fond foncé</p>
+          <div class="fond bg-color1">
+            <div class="couleur bg-color2"></div>
+            <div class="couleur bg-color3"></div>
+            <div class="couleur bg-color4"></div>
+          </div>
+        </div>
+        <div class="interdits">
+          <h3>Interdits ⛔</h3>
+          <p>Éviter les manques de contraste</p>
+          <div class="fond bg-color2">
+            <div class="couleur bg-color3"></div>
+            <div class="couleur bg-color4"></div>
+          </div>
+        </div>
+        <div class="usages">
+          <h3>Usages sur visuels 🖼️</h3>
+          <p>Fond clairs > Utiliser la couleur foncée</p>
+          <div class="fond fond-img-bright">
+            <div class="color4">Some Text ⛔</div>
+            <div class="color1">Some Text ✅</div>
+            <div class="color3-darker">Some Text ✅</div>
+          </div>
+          <p>Fond foncés > Utiliser une couleur claire d'un ton différent</p>
+          <div class="fond fond-img-dark">
+            <div class="color2-brighter">Some Text ✅</div>
+            <div class="color3-darker">Some Text ⛔</div>
+            <div class="color4">Some Text ✅</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="typo">
+    <div class="content">
+      <h2>Typographie</h2>
+      <div class="colonnes">
+
+        <div class="main mx-width-half font1">
+          <h3>Caveat / Regular</h3>
+          <p class="font2"><em>Pour donner un côté plus décompléxé, amical, abordable, <br>appliquée aux titres principaux</em></p>
+          <div class="text-left">
+            <h1>Exemple de titre h1</h1>
+            <h2>Exemple de titre h2</h2>
+            <h3>Exemple de titre h3</h3>
+
+            <p class="font2"><em>Les autres titres récupèrent la police classique</em></p>
+            <h4>Exemple de titre h4</h4>
+            <h5>Exemple de titre h5</h5>
+            <h6>Exemple de titre h6</h6>
+          </div>
+          
+          <h4>Représentation des caractères</h4>
+          <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+          <p>abcdefghijklmnopqrstuvwxyz</p>
+          <p>0123456789£€$&*()/!?.,:;</p>
+          <p>ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿŒœŠšŸƒ</p>
+          <p><a href="https://fonts.google.com/specimen/Playfair+Display?query=Playfair+Display">Lien Google web fonts</a></p>
+        </div>
+          
+        <div class="main mx-width-half font2">
+          <h3 class="font2">Raleway</h3>
+          <p><em>Police classique sans empatement, reconnue pour sa lisibilité et son élgance,<br>appliquée aux petits titres et autres textes. Elle permet de compenser le côté "léger" de la police utilisée pour les titres.</em></p>
+          <h4>Extrait de texte</h4>
+          <p class="text-justify">Ego vero sic intellego, Patres conscripti, nos hoc tempore in provinciis
+            decernendis perpetuae pacis habere oportere rationem. Nam quis hoc
+            non sentit omnia alia esse nobis vacua ab omni periculo atque etiam
+            suspicione belli. Ego vero sic intellego, Patres conscripti, nos hoc tempore
+            in provinciis decernendis perpetuae pacis habere oportere rationem.
+            Nam quis hoc non sentit omnia alia esse nobis vacua ab omni periculo
+            atque etiam suspicione belli.
+          </p>
+            
+          <h4>Représentation des caractères</h4>
+          <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+          <p>abcdefghijklmnopqrstuvwxyz</p>
+          <p>0123456789£€$&*()/!?.,:;</p>
+          <p>ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿŒœŠšŸƒ</p>
+          <p><a href="https://fonts.google.com/specimen/Roboto+Condensed?slant=1&query=roboto+conde">Lien Google web fonts</a></p>
+          
+          <hr>
+
+          <h3>Polices alternatives pour les titres</h3>
+          <ul>
+            <li><a href="https://fonts.google.com/specimen/Lato" target="blank" title="Police alternative">Lato Light 300 Italic</a> / Police (très) fine et élégante</li>
+            <li><a href="https://fonts.google.com/specimen/Caveat" target="blank" title="Police alternative">Caveat 400 Regular</a> / Police fine mais effet manuscrit</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="visuel">
+    <div class="content">
+      <h2>Aspect visuel</h2>
+      
+      <div class="colonnes">
+        <div class="mx-width-half">
+          <h3>Style recherché</h3>
+          <p>Mots clés : Gourmandise, délicatesse, raffinement, convivialité</p>
+          <p>Le thème proposé casse un peu les conventions du luxe, en associant une police effet "manuscrite" a des couleurs vives,
+            afin de proposer une identité forte.
+          </p>
+          <p>Elle touche un peu aux plates bandes des desserts, des gourmandises, afin de miser sur un effet "péché mignon" pour le Champagne,
+            ce qui n'est pas si loin du luxe et des produits réservés aux grandes occasions.
+          </p>
+          <hr>
+          <h3>Rapport couleur texte</h3>
+          <p><em>2 possibilités : Fond sombre et police claire, Fond clair et police sombre</em></p>
+          <div class="illustration-bg-colore">
+            <div class="bg-color1 centre-a-l-ancienne container-spe">
+              <h2 class="color2">Champagne</h2>
+              <h2 class="color4">Champagne</h2>
+            </div>
+            <div class="bg-image bg-color4 centre-a-l-ancienne container-spe">
+              <p class="color1">Du texte qui parle de Champagne</p>
+              <p class="color3-darker">Du texte qui parle de Champagne</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mx-width-half">
+          <h3>Utilisation sur des images</h3>
+          <p>Avec ce nuanicer, je recommande des fonds de couleurs clairs, des ambiances intimistes ou décontractées.</p>
+          <div class="bg-image bg-dark centre-a-l-ancienne container-spe">
+            <h2 class="color2">Champagne</h2>
+            <h2 class="color4">Champagne</h2>
+          </div>
+          <div class="bg-image bg-bright centre-a-l-ancienne container-spe">
+            <p class="color1">Du texte qui parle de Champagne</p>
+            <p class="color2">Du texte qui parle de Champagne</p>
+            <p class="color3">Du texte qui parle de Champagne</p>
+          </div>
+          <p class="small-font">Des ombres portées peuvent être utilisées sur les textes au dessus des images afin de faciliter la lisibilité.</p>
+          <p class="small-font">Les <span class="color2">couleurs claires</span> sont à réserver pour les éléments plus importants <span class="color4">(points focaux)</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="web">
+    <div class="content">
+      <h2>Composants web</h2>
+      <p><em>Note : Les composants web pourront varier en fonction des besoins, le but ici est d'illustrer l'utilisation des couleurs & polices</em></p>
+      
+      <div class="colonnes">
+        
+        <div class="icones-et-boutons">
+          <h3>Icônes & Boutons</h3>
+          <div class="icones">
+            <div class="social color1">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-reddit-alien"></i>
+            </div>
+            <div class="social color3">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-reddit-alien"></i>
+            </div>
+            <div class="social color2">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-reddit-alien"></i>
+            </div>
+            <div class="social color4">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-reddit-alien"></i>
+            </div>
+            <div class="social bg-color1 color2">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-reddit-alien"></i>
+            </div>
+            <div class="social bg-color1 color4">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-reddit-alien"></i>
+            </div>
+          </div>
+          <div class="boutons">
+            <div class="line">
+              <button class="btn1">Push me</button>
+              <button class="btn2">Push me</button>
+              <button class="btn3">Push me</button>
+              <button class="btn4">Push me</button>
+            </div>
+            <div class="line bg-color1">
+              <button class="btn2">Push me</button>
+              <button class="btn3">Push me</button>
+              <button class="btn4">Push me</button>
+            </div>
+          </div>
+          <h4>Survols</h4>
+          <div class="boutons hover posr">
+            <div class="line">
+              <button class="btn1">Push me</button>
+              <button class="btn2">Push me</button>
+              <button class="btn3">Push me</button>
+              <button class="btn4">Push me</button>
+            </div>
+            <div class="line bg-color1">
+              <button class="btn2">Push me</button>
+              <button class="btn3">Push me</button>
+              <button class="btn4">Push me</button>
+            </div>
+            <i class="fas fa-hand-point-up cursor-pointer"></i>
+          </div>
+        </div>
+
+        <div class="formulaires">
+          <h3>Formulaires</h3>
+          <form action="" class="color2">
+            <table>
+              <tbody>
+                <tr>
+                  <td><label for="idname">Nom</label></td>
+                  <td><input type="text" id="idname" name="name" value="Mon nom" class="border-color2 color3-darker"></td>
+                </tr>
+                <tr>
+                  <td><label for="idemail">Email</label></td>
+                  <td><input type="email" id="idemail" name="email" placeholder="your.mail@here.com" class="border-color2 color3-darker"></td>
+                </tr>
+                <tr>
+                  <td><label for="idpassword">Mot de passe</label></td>
+                  <td><input type="password" id="idpassword" name="password" class="border-color2 color3-darker"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><button type="submit" class="btn2">Envoyer</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+          <hr>
+          <form action="" class="dark bg-color1 color3-darker">
+            <table>
+              <tbody>
+                <tr>
+                  <td><label for="idname2" class="color4">Nom</label></td>
+                  <td><input type="text" id="idname2" name="name" value="Mon nom" class="bg-color4-darker color4 border-color4"></td>
+                </tr>
+                <tr>
+                  <td><label for="idemail2" class="color4">Email</label></td>
+                  <td><input type="email" id="idemail2" name="email" placeholder="your.mail@here.com" class="bg-color4-darker color4 border-color4"></td>
+                </tr>
+                <tr>
+                  <td><label for="idpassword2" class="color4">Mot de passe</label></td>
+                  <td><input type="password" id="idpassword2" name="password" class="bg-color4-darker color4 border-color4"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><button type="submit" class="btn4">Envoyer</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
+      </div>
+
+      <div class="boutons-dore">
+        <h3>Test boutons dorés</h3>
+        <p class="small-font"><em>Possibilité d'animation légères au survol</em></p>
+        <div class="colonnes">
+          <div class="bg-image col1">
+            <button class="border-color1 color1 bg-or1-incline btn-big">Valider</button><br><br>
+            <button class="border-color1 color1 bg-or2-incline btn-big">Valider</button><br><br>
+            <button class="border-color1 color1 bg-or3-incline btn-big">Valider</button>
+          </div>
+          <div class="bg-image bg-dark col2">
+            <button class="border-color1 color1 bg-or1-incline btn-big">Valider</button><br><br>
+            <button class="border-color1 color1 bg-or2-incline btn-big">Valider</button><br><br>
+            <button class="border-color1 color1 bg-or3-incline btn-big">Valider</button>
+          </div>
+          <div class="bg-image bg-dark col3">
+            
+            <button class="btn-big border-gradient border-gradient-or1">
+              <!-- Need a span to allow background rgba, can't text-shadow -->
+              <span class="text-gradient text-or1">Valider</span>
+            </button>
+            <br><br>
+
+            
+            <button class="btn-big border-gradient border-gradient-or2">
+              <!-- Need a span to allow background rgba, can't text-shadow -->
+              <span class="text-gradient text-or2">Valider</span>
+            </button>
+            <br><br>
+            
+            <button class="btn-big border-gradient border-gradient-or3">
+              <!-- Need a span to allow background rgba, can't text-shadow -->
+              <span class="text-gradient text-or3">Valider</span>
+            </button>
+            
+          </div>
+        </div>
+      </div>
+
+
+
+      <div>
+        <div class="menus">
+          <h3>Menus et survols</h3>
+          <h4>Menu mobile</h4>
+          <nav class="menu-mobile border-color2 border-thin color2 font1 mx-width-half centre-a-l-ancienne" style="box-sizing: initial;">
+            <div><i class="fab fa-microblog" title="logo"></i> Mon site</div>
+            <button class="btn-menu-mobile bg-color2 color-soft-white"><i class="fas fa-bars"></i></button>
+          </nav>
+          <p>
+            Bouton survolé : <button class="btn-menu-mobile bg-color4 color-soft-white"><i class="fas fa-bars"></i></button>,
+            Bouton activé : <button class="btn-menu-mobile bg-color4-brighter color-soft-white"><i class="fas fa-bars"></i></button>
+          </p>
+          <p>Menu mobile déplié</p>
+          <nav class="menu menu-mobile-deplie border-color2 border-thin color2 font1 centre-a-l-ancienne">
+            <ul>
+              <li><a href="#" class="color2"><i class="fab fa-microblog" title="logo"></i> Mon site</a></li>
+              <li><a href="#" class="color2">Nos produits</a></li>
+              <li><a href="#" class="color2">Qui sommes-nous ?</a></li>
+              <li><a href="#" class="color-soft-white bg-color2-darker">Lien survolé</a></li>
+              <li><a href="#" class="color2">Contact</a></li>
+            </ul>
+            <i class="fas fa-hand-point-up cursor-pointer"></i>
+          </nav>
+
+
+          <h4>Menu Bureau</h4>
+          <nav class="menu menu-desktop border-color2 border-thin color2 font1 mx-width-half centre-a-l-ancienne">
+            <ul>
+              <li><a href="#" class="color2"><i class="fab fa-microblog" title="logo"></i> Mon site</a></li>
+              <li><a href="#" class="color2">Nos produits</a></li>
+              <li><a href="#" class="color2">Qui sommes-nous ?</a></li>
+              <li class="posr"><a href="#" class="color-soft-white bg-color2-darker">Lien survolé</a><i class="fas fa-hand-point-up cursor-pointer"></i></li>
+              <li><a href="#" class="color2">Contact</a></li>
+            </ul>
+          </nav>
+          
+          <h4>Menu bas de page</h4>
+          <nav class="footer1 menu-footer border-color2 border-thin color2 font2 mx-width-half centre-a-l-ancienne">
+            <div class="first-row border-color2 bb-thin">
+              <ul>
+                <li><h4 class="color2">Liens utiles</h4></li>
+                <li><a href="#" class="color2-brighter">Conditions d'utilisations</a></li>
+                <li><a href="#" class="color2-brighter">Plan du site</a></li>
+                <li class="posr"><a href="#" class="color4-brighter">Crédits</a><i class="fas fa-hand-point-up cursor-pointer"></i></li>
+                <li><a href="#" class="color2-brighter">Contact</a></li>
+              </ul>
+
+              <ul>
+                <li><h4 class="color2">Partenaires</h4></li>
+                <li><a href="#" class="color2-brighter">Jean michel apeupré</a></li>
+                <li><a href="#" class="color2-brighter">Jean michel avou</a></li>
+                <li><a href="#" class="color2-brighter">Jean michel yaourt</a></li>
+              </ul>
+              
+              <ul class="dark">
+                <li><h4 class="color2">Inscrivez vous à la newsletter</h4></li>
+                <li><input type="email" placeholder="Votre email" class="border-color2 color3-darker"><button class="btn2">Go</button></li>
+              </ul>
+            </div>
+            <div class="second-row color2">
+              © Copyright Masamune <script>document.write(new Date().getFullYear());</script>
+            </div>
+          </nav>
+          <hr>
+
+          <nav class="footer2 menu-footer border-color4 border-thin color4 font2 mx-width-half centre-a-l-ancienne">
+            <div class="first-row border-color4 bb-thin" style="border-bottom-color: #09a3a5;">
+              <ul>
+                <li><h4 class="color4">Liens utiles</h4></li>
+                <li><a href="#" class="color4-brighter">Conditions d'utilisations</a></li>
+                <li><a href="#" class="color4-brighter">Plan du site</a></li>
+                <li class="posr"><a href="#" class="color3-brighter">Crédits</a><i class="fas fa-hand-point-up cursor-pointer"></i></li>
+                <li><a href="#" class="color4-brighter">Contact</a></li>
+              </ul>
+
+              <ul>
+                <li><h4 class="color4">Partenaires</h4></li>
+                <li><a href="#" class="color4-brighter">Jean michel apeupré</a></li>
+                <li><a href="#" class="color4-brighter">Jean michel avou</a></li>
+                <li><a href="#" class="color4-brighter">Jean michel yaourt</a></li>
+              </ul>
+              
+              <ul class="dark">
+                <li><h4 class="color4">Inscrivez vous à la newsletter</h4></li>
+                <li><input type="email" placeholder="Votre email" class="border-color4 color3-darker"><button class="btn4">Go</button></li>
+              </ul>
+            </div>
+            <div class="second-row color4">
+              © Copyright Masamune <script>document.write(new Date().getFullYear());</script>
+            </div>
+          </nav>
+          <hr>
+
+          <nav class="footer3 menu-footer border-color3 border-thin color3 font2 mx-width-half centre-a-l-ancienne bg-color3">
+            <div class="first-row border-color2 bb-thin">
+              <ul>
+                <li><h4 class="color-soft-white">Liens utiles</h4></li>
+                <li><a href="#" class="color-soft-white">Conditions d'utilisations</a></li>
+                <li><a href="#" class="color-soft-white">Plan du site</a></li>
+                <li class="posr"><a href="#" class="color3-brighter">Crédits</a><i class="fas fa-hand-point-up cursor-pointer"></i></li>
+                <li><a href="#" class="color-soft-white">Contact</a></li>
+              </ul>
+
+              <ul>
+                <li><h4 class="color-soft-white">Partenaires</h4></li>
+                <li><a href="#" class="color-soft-white">Jean michel apeupré</a></li>
+                <li><a href="#" class="color-soft-white">Jean michel avou</a></li>
+                <li><a href="#" class="color-soft-white">Jean michel yaourt</a></li>
+              </ul>
+              
+              <ul class="dark">
+                <li><h4 class="color-soft-white">Inscrivez vous à la newsletter</h4></li>
+                <li><input type="email" placeholder="Votre email" class="color3-darker" style="border-color: #fbfbfb;"><button class="btn2" style="color: #fbfbfb; border-color: #fbfbfb;">Go</button></li>
+              </ul>
+            </div>
+            <div class="second-row color3-darker">
+              © Copyright Masamune <script>document.write(new Date().getFullYear());</script>
+            </div>
+          </nav>
+          <hr>
+          
+          <nav class="footer4 menu-footer border-color4 border-thin color4 font2 mx-width-half centre-a-l-ancienne bg-color4">
+            <div class="first-row border-color2 bb-thin">
+              <ul>
+                <li><h4 class="color-soft-white">Liens utiles</h4></li>
+                <li><a href="#" class="color-soft-white">Conditions d'utilisations</a></li>
+                <li><a href="#" class="color-soft-white">Plan du site</a></li>
+                <li class="posr"><a href="#" class="color2">Crédits</a><i class="fas fa-hand-point-up cursor-pointer"></i></li>
+                <li><a href="#" class="color-soft-white">Contact</a></li>
+              </ul>
+
+              <ul>
+                <li><h4 class="color-soft-white">Partenaires</h4></li>
+                <li><a href="#" class="color-soft-white">Jean michel apeupré</a></li>
+                <li><a href="#" class="color-soft-white">Jean michel avou</a></li>
+                <li><a href="#" class="color-soft-white">Jean michel yaourt</a></li>
+              </ul>
+              
+              <ul class="dark">
+                <li><h4 class="color-soft-white">Inscrivez vous à la newsletter</h4></li>
+                <li><input type="email" placeholder="Votre email" class="color4-darker border-color2"><button class="btn2" style="background-color: #fbfbfb;">Go</button></li>
+              </ul>
+            </div>
+            <div class="second-row color4-darker">
+              © Copyright Masamune <script>document.write(new Date().getFullYear());</script>
+            </div>
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>Créé par <a href="http://masamune.fr" target="_blank" title="Developpeur web fullstack freelance">Masamune</a>, cf. <a href="https://github.com/youpiwaza/charte-graphique" target="_blank" title="Le github du mec">projet de référence</a>.</footer>
+
+  <!-- Those lines will be removed automatically w. 'gulp prod' -->
+  <script src="./js/vendors/fontfaceobserver.js" type="text/javascript"></script>
+  <script type='text/javascript' src='./js/vendors/tinycolor.js'></script>
+  <script src="./script.js" type="module"></script>
+
+  <!-- Minified injected js -->
+  <!-- htmlmin:ignore3-->
+  <script>
+    // inject:critjs
+    // endinject
+  </script>
+  <noscript>Beh t'as pas JavaScript, c'est ballot</noscript>
+  <!-- htmlmin:ignore3:end-->
+</body>
+
+</html>

@@ -11,7 +11,7 @@ export function fonts() {
   //    ex: First font will have the class '.font1', Second will have 'font2', etc.
   //    .font1 will be used for titles, .font2 for regular texts
 
-  const fonts = ['Caveat', 'Raleway'];
+  const fonts = ['Montserrat'];
 
   for(let i = 0 ; i < fonts.length ; i++) {
     const font = new FontFaceObserver(fonts[i]);
